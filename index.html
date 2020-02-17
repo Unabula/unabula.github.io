@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>AMET Luka</title>
+	<meta name="author" content="Luka AMET" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+	<meta name="Resource-type" content="Document" />
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet"> 
+
+
+
+	<link rel="stylesheet" type="text/css" href="fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+
+	html {
+		font-family: 'IBM Plex Mono', monospace;
+	}
+
+	h1{
+		font-size: 5em;
+		font-family: 'IBM Plex Mono', monospace;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section">
+		<div class="intro">
+			<h1>AMET Luka</h1>
+			<p>Webdesigner, creative coder and visualist.</p>
+		</div>
+	</div>
+
+	<div class="section">
+			<div class="intro">
+				<h1>Who am I ?</h1>
+				<p>
+					Hey, I'm Luka, I'm a webdesigner, creative coder, visualist and sometimes musician.<br> Nice to meet you ! 
+				</p>
+			</div>
+		</div>
+
+	<div class="section">
+			<h1>Projects</h1>
+			
+			<div class="gallery-image">
+				<div class="img-box">
+				  <img src="neuvoids.png" href="https://neuvoids.live" alt="" />
+				  <div class="transparent-box">
+					<div class="caption">
+					  <p><a href="https://neuvoids.live">Neuvoids</a></p>
+					  <p class="opacity-low">Online broadcasting platform</p>
+					</div>
+				  </div>
+
+			  </div>
+		
+		
+		</div>
+		</div>
+</div>
+
+<script type="text/javascript" src="fullpage.js"></script>
+<script type="text/javascript" src="style.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#000000', '#000000', '#000000'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['', '', '']
+    });
+</script>
+
+</body>
+</html>
